@@ -1,0 +1,195 @@
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(67, 1, 67);
+}
+
+.contenedorPrincipal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blur {
+    filter: blur(20px);
+}
+
+img {
+    height: 55px;
+    width: 55px;
+    border-radius: 200px;
+    margin-left: 20px;
+}
+
+#commentBar {
+    width: 600px;
+    height: 80px;
+    background-color: rgb(148, 1, 150);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+}
+
+#textBox {
+    display: flex;
+    align-items: center;
+    background-color: rgb(102, 0, 117);
+    border-radius: 20px;
+    width: 80%;
+    height: 40px;
+    margin-left: 20px
+}
+
+#textBox p {
+    color:  rgb(255, 255, 255);
+    margin-left: 20px;
+}
+
+.agregarComentarioVisible {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(26, 26, 26);
+    width: 600px;
+    border-radius: 20px;
+}
+
+.agregarComentarioInvisible {
+    display: none;
+}
+
+#agregarSuperior {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+#agregarSuperior h2 {
+    margin: 0;
+}
+
+#cancelComment {
+    width: 30px;
+    position: relative;
+    left: 150px;
+}
+
+#agregarInferior hr {
+    width: 100%;
+    margin: 0;
+}
+
+#agregarInferior {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+
+}
+
+#agrefarInferiorSuperior {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#agrefarInferiorSuperior p {
+    margin-left: 20px;
+}
+
+#agrefarInferiorSuperior img {
+    width: 50px;
+    height: 50px;
+}
+
+textarea {
+    width: 90%;
+    background: transparent;
+    resize: none;
+    border: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.deactivatedButton {
+    width: 90%;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(58, 58, 58);
+    outline: none;
+    color: rgb(129, 129, 129);
+    
+}
+
+.activeButton {
+    width: 90%;
+    margin: 10px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: rgb(74, 132, 255);
+    outline: none;
+    color: rgb(255, 251, 251);
+}
+
+#contenedorComentarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.comentario {
+    width: 600px;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    margin: 10px;
+    color: white;
+    padding: 20px;
+}
+
+.superiorComentario {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.superiorComentario p {
+    margin-left: 20px;
+}
+
+.publicComment {
+    width: 100%;
+    text-align: left;
+}
